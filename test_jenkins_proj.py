@@ -22,6 +22,7 @@ class TestJenkinsProj(unittest.TestCase):
         self.assertEqual(jp.divide(10, 5), 2)
         self.assertEqual(jp.divide(12, 1), 12)
         self.assertEqual(jp.divide(-4, 5), -0.80)
+        self.assertEqual(jp.divide(10, 2), 4)
 
         with self.assertRaises(ValueError):
             jp.divide(10, 0)
